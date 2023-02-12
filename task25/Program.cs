@@ -4,19 +4,39 @@
 
 Console.Clear();
 Console.WriteLine();
-int num1 = int.Parse(Console.ReadLine());
-int MyMethod(int num)
-{
-    int i;
-    for (i = 1; i < 10; i++)
-        Console.Write(i);
-    {
-        if (i == 5) // прервать на шаге 5
-        {
-            Console.WriteLine();
 
-        }
-    }
-    return i;
+int result = Qrt(UserAdd(), UserAdd());
+Console.WriteLine(result);
+// Qrt    тут выдает степень
+//Qrt(num1, num1);
+
+int UserAdd()
+{
+    //int count = 1;
+    //while (count <= 2)
+    //{
+    Console.WriteLine($"Введите число, нажмите Enter:");
+    int number = int.Parse(Console.ReadLine());
+    //count++;
+    //}
+    return (number);
 }
-MyMethod(num1);
+int Qrt(int first, int second)
+{
+    //Для быстрой проверки работы метода
+    int temp = 1;
+    // int second = 5; // быстрая проверка
+    // int first = 3; 
+    int degree = 1;
+
+    while (temp <= second)
+    {
+        degree = degree * first;
+        //Console.WriteLine(degree); проверка возведения в степень
+        temp++;
+    }
+    return (degree);
+}
+
+//Прим. т.к. задание самопроверка:( сэкономили время на оформлении 
+
